@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - CwinX Housekeeping Agency</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="about.css">
+</head>
+
+<body>
+<!-- Header Section -->
+<div class="header">
+    <div class="header-left">
+        <img src="images/logo.png" alt="CwinX Logo" class="logo-img">
+        <h1>CwinX</h1>
+    </div>
+    <div class="header-right">
+        <a class="active" href="about.html">About Us</a>
+        <a href="contact.html">Contact Us</a>
+        <a href="services.html">Services</a>
+        <a href="home.html">Home</a>
+        <a href="#" id="logout-button">
+            <i class="fas fa-sign-out-alt"></i>
+        </a>
+    </div>
+</div>
+
+<div class="media-container">
+    <div class="hero">
+        <h1>CwinX</h1>
+        <p>Your trusted partner in maintaining a clean and organized home.</p>
+    </div>
+
+    <!-- Video Section -->
+    <div class="video-container">
+        <video width="100%" controls>
+            <source src="images/Cleaning service promo video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+</div>
+
+<!-- Mission and Values Section -->
+<div class="mission-values-container">
+    <h2>Our Mission and Values</h2>
+    <img src="images/logo.png" alt="Our Mission and Values">
+    <p>At CwinX, our mission is to create a clean and comfortable living environment for our clients through reliable and efficient housekeeping services.</p>
+    
+    <div class="benefits">
+        <div class="benefit card">
+            <h3>Integrity</h3>
+            <p>We believe in being honest and transparent in our services.</p>
+        </div>
+        <div class="benefit card">
+            <h3>Excellence</h3>
+            <p>We strive to exceed our clients' expectations with every service.</p>
+        </div>
+        <div class="benefit card">
+            <h3>Customer Satisfaction</h3>
+            <p>Our clients' happiness is our top priority.</p>
+        </div>
+    </div>
+</div>
+
+<!-- Contact Information Section -->
+<div class="contact-info">
+    <h3>Get in Touch</h3>
+    <p>Questions about our services? <a href="contact.html" class="btn">Contact Us</a></p>
+</div>
+
+<footer>
+    <p>© Copyright <strong>CwinX Housekeeping Agency</strong>. All Rights Reserved.</p>
+    <div class="footer-links">
+        <a href="terms.html">Terms & Conditions</a> | <a href="terms.html">Privacy Policy</a>
+    </div>
+</footer>
+
+<script>
+document.getElementById('logout-button').addEventListener('click', function(e) {
+    e.preventDefault();
+    if (confirm("Are you sure you want to log out?")) {
+        alert("You have successfully logged out!");
+        window.location.href = 'index.html';
+    }
+});
+</script>
+
+</body>
+</html>

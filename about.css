@@ -1,0 +1,155 @@
+/* Reset and General Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f8f9fa;
+    color: #333;
+    line-height: 1.6;
+}
+/* Header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #007bff;
+    padding: 10px 20px;
+    color: #fff;
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+}
+
+.header-left img {
+    height: 40px;
+    margin-right: 10px;
+}
+
+.header-right a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+    font-size: 14px;
+}
+
+.header-right a:hover {
+    text-decoration: underline;
+}
+
+#logout-button i {
+    font-size: 16px;
+    color: #fff;
+}
+
+/* Content Containers */
+.media-container, 
+.mission-values-container, 
+.contact-info {
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Hero Section */
+.hero h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+/* Video */
+.video-container video {
+    max-width: 100%;
+    margin: 20px auto;
+    display: block;
+}
+
+/* Mission & Values */
+.mission-values-container img {
+    max-width: 80px;
+    margin: 15px auto;
+}
+
+.mission-values-container p {
+    margin-bottom: 20px;
+}
+
+/* Benefit Cards */
+.benefits {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    margin: 20px 0;
+}
+
+.benefit {
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    padding: 15px;
+    width: calc(33.333% - 20px);
+    min-width: 250px;
+}
+
+.benefit h3 {
+    color: #007bff;
+    margin-bottom: 10px;
+}
+
+/* Contact Section */
+.contact-info {
+    background: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.btn {
+    display: inline-block;
+    background: #007bff;
+    color: #fff;
+    padding: 8px 15px;
+    border-radius: 4px;
+    text-decoration: none;
+    margin-top: 10px;
+}
+
+/* Footer */
+footer {
+    background: #222;
+    color: #fff;
+    padding: 15px;
+    text-align: center;
+    font-size: 14px;
+}
+
+footer a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+    }
+    
+    .header-right {
+        margin-top: 10px;
+    }
+    
+    .benefits {
+        flex-direction: column;
+    }
+    
+    .benefit {
+        width: 100%;
+    }
+}

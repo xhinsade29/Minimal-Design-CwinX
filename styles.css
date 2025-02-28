@@ -1,0 +1,191 @@
+
+
+body{
+    background-image: url("img/home.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-items: center;
+    justify-content: center;
+  
+  }
+
+  .container {
+    display: flex; /* Use flexbox */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    height: 100vh; /* Full viewport height */
+    border-color: bisque;
+    border-style: solid;
+    border-width: 2px;
+}
+
+  .login-main {
+    text-align: center;
+    margin-top: 10px;   
+    color: bisque;  
+    font-size: 25px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    border-style: solid;
+    border-color: bisque;
+    border-width: 2px;
+    padding: 2rem;
+}
+
+.login-main form {
+    display: inline-block
+     
+}
+
+.login-main input, .login-main button {
+    display: block;       
+    margin: 10px auto;
+    margin-top: 5px;  
+    width: 300px;       
+    padding: 15px;       
+    border: 1px solid #ccc; 
+    border-radius: 5px;
+
+}
+
+.login-main button {
+    margin-top: 3rem; /* Increased space below the button */
+    font-family: Georgia, 'Times New Roman', Times, serif; /* Button font */
+    font-size: 18px; /* Button font size */
+}
+
+.login-main input:focus, .login-main button:hover {
+    border-color: #007BFF; 
+}
+
+
+
+
+/* ------------------ Header Styling ------------------ */
+.header {
+    display: flex;
+    justify-content: space-between; /* Space between left and right sections */
+    align-items: center; /* Vertically center items */
+    background-color: #2E5E4E; /* Forest Green for header background */
+    padding: 20px 10px;
+    font-size: 18px;
+    border-bottom: 5px solid #D9C187;
+    border-top: 5px solid #D9C187;
+}
+
+.header-left {
+    display: flex; /* Flexbox for alignment */
+    align-items: center; /* Vertically center items */
+    justify-content: left; /* Align to the left */
+    flex-grow: 1; /* Allow to grow */
+}
+
+.header-right {
+    display: flex; /* Flex container */
+    gap: 15px; /* Space between links */
+}
+
+.header a {
+    color: #F5F5E9; /* Cream White for links */
+    text-align: center;
+    padding: 3px;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    margin-left: 5px;
+}
+
+.header a:hover {
+    background-color: rgba(121, 7, 64, 0.637); /* Hover effect */
+}
+  .logo-img {
+      height: 70px;
+      width: 70px; 
+      border-radius: 50%; 
+      margin-right: 5px; 
+  }
+  .header-Right {
+      display: flex; 
+      align-items: center; 
+  }
+  
+  .header a {
+      color: white;
+      text-align: center;
+      padding: 12px;
+      text-decoration: none;
+      font-size: 15px;
+      line-height: 25px;
+      border-radius: 4px;
+      font-family: Arial, Helvetica, sans-serif;
+      font-weight: bold;
+      margin-left: 10px; /* Space between navigation links */
+  }
+  
+  .header a:hover {
+      background-color: rgba(201, 52, 114, 0.637);
+      color: white;
+  }
+  
+  .header a.active {
+      background-color: rgb(121, 7, 64);
+      color: white;
+  }
+  
+  .footer {
+      position: fixed;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      background-color: rgb(66, 6, 41);
+      color: white;
+      text-align: center;
+      padding: 15px;
+  }
+  
+  #content {
+      color: rgb(252, 247, 247);
+      text-align: justify;
+      font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+      font-size: 75px;
+  }
+  
+  /* Menu Icon Styling */
+.menu-icon {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.menu-icon .icon {
+    font-size: 35px; /* Adjust size as needed */
+    color: whitesmoke;     /* Icon color */
+}
+
+/* Dropdown Menu Styling */
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 30px;
+    right: 0;
+    background-color: #ffffff;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    min-width: 120px;
+    z-index: 1000;
+}
+
+.dropdown-menu a {
+    color: #333;
+    padding: 10px 15px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-menu a:hover {
+    background-color: #f0f0f0;
+}
+
+/* Show Dropdown on Hover */
+.menu-icon:hover .dropdown-menu {
+    display: block;
+}

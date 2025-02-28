@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CwinX Housekeeping</title>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+   
+    <link rel="stylesheet" href="home.css" media="screen">
+</head>
+<body>
+
+<!-- Header Section -->
+<div class="header">
+    <div class="header-left">
+        <img src="images/logo.png" alt="CwinX Logo" class="logo-img">
+      <h1> CwinX </h1>
+    </div>
+ <div class="header-right">
+    <a href="about.html">About Us</a>
+    <a href="contact.html">Contact Us</a>
+    <a href="services.html">Services</a>
+    <a class="active" href="home.html">Home</a>
+<!-- Font Awesome Logout Button -->
+<a href="#" id="logout-button">
+    <i class="fas fa-sign-out-alt"></i>
+</a>
+
+  </div>
+</div>
+
+
+    <!-- Hero Section -->
+    <div class="container">
+        <div class="login-main">
+            <h1>Welcome to</h1>
+            <h1> CwinX Housekeeping Agency</h1>
+            <p>Your ultimate solution for a clean, organized, and refreshed home. With our professional team and custom-tailored services, we guarantee your satisfaction every time.</p>
+            
+            <img src="./images/home-bg.jpeg" alt="Clean home environment" class="service-image">
+       
+            <a href="services.html" class="btn">Explore Our Services</a>
+        </div>
+    </div>
+    
+        <!-- Benefits Section -->
+    <div class="container benefits-container">
+        <div class="login-main1">
+            <section class="about-us">
+              
+                 <!-- Benefits Section Title -->
+<h2 class="offers-title"> ---- Services Offer ---- </h2>
+
+                <div class="benefits">
+                    <div class="benefit card">
+                        <img src="images/professional-staff-image.jpeg" alt="Professional Staff" class="benefit-image">
+                        <h3>Professional Staff</h3>
+                        <p>Our team is composed of experienced and trustworthy housekeeping professionals who are committed to delivering high-quality services every time.</p>
+                    </div>
+                    <div class="benefit card">
+                        <img src="images/customized-cleaning-image.jpeg" alt="Customized Cleaning" class="benefit-image">
+                        <h3>Customized Cleaning Plans</h3>
+                        <p>We tailor our cleaning solutions to fit your unique needs, ensuring your home receives the care it deserves.</p>
+                    </div>
+                    <div class="benefit card">
+                        <img src="images/affordable-rates-image.jpeg" alt="Affordable Rates" class="benefit-image">
+                        <h3>Affordable Rates</h3>
+                        <p>Get top-notch housekeeping services at competitive prices. We offer packages that suit various budgets without compromising quality.</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <!-- Call-to-action section -->
+    <section class="cta">
+        <h2>Why Choose CwinX?</h2>
+        <p>With CwinX, you are not just hiring cleaners; you’re partnering with a trusted service that takes pride in turning your home into a spotless, peaceful sanctuary.</p>
+        <ul>
+            <li>Professional & Verified Cleaners</li>
+            <li>Customized Cleaning Plans</li>
+            <li>Affordable Pricing</li>
+            <li>100% Satisfaction Guarantee</li>
+        </ul>
+       <button onclick="location.href='contact.html'" class="cta-btn">Book a Cleaning Now!</button>
+       </section>
+    
+    
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer">
+            <p>© Copyright <strong>CwinX Housekeeping Agency</strong>. All Rights Reserved.</p>
+            <div class="footer-links">
+                <a href="terms.html">Terms & Conditions</a> | 
+                <a href="terms.html">Privacy Policy</a>
+            </div>
+        </div>
+    </footer>
+    
+    <meta name="csrf-token" content="YOUR_CSRF_TOKEN_HERE">
+
+    <script>
+document.getElementById('logout-button').addEventListener('click', function(e) {
+  e.preventDefault();
+  
+  if(confirm("Are you sure you want to log out?")) {
+    // Send request to server to invalidate session
+    fetch('/api/logout', {
+      method: 'POST',
+      credentials: 'same-origin',
+      headers: {
+        'CSRF-Token': document.querySelector('meta[name="csrf-token"]').getAttribute('content')
+      }
+    })
+    .then(response => {
+      if(response.ok) {
+        window.location.href = 'index.html';
+      }
+    })
+    .catch(error => console.error('Logout failed:', error));
+  }
+});
+
+
+
+</script>
+
+
+</body>
+</html>
